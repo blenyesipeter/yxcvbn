@@ -118,6 +118,48 @@
             }
         }
 
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 80%;
+            padding: 0;
+            list-style-type: square;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5em;
@@ -132,6 +174,14 @@
                 font-size: 1em;
                 padding: 12px 24px;
             }
+
+            table {
+                width: 100%;
+            }
+
+            ul {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -140,6 +190,39 @@
     <p id="dynamic-text">Elsőként egy kis szórakozás vár rád.</p>
 
     <a href="#" class="button" onclick="changeText()">Kattints rám egy meglepetésért!</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tanuló neve</th>
+                <th>Életkor</th>
+                <th>Osztályzat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kiss Péter</td>
+                <td>16</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Horváth Anna</td>
+                <td>17</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Nagy Bence</td>
+                <td>16</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>Kattints a gombra, hogy megnézd a meglepetést!</li>
+        <li>Fedezd fel a táblázatot a tanulókról.</li>
+        <li>Élvezd az interaktív dizájnt és funkciókat!</li>
+    </ul>
 
     <div id="overlay" onclick="closePopup()"></div>
     <div id="popup">
