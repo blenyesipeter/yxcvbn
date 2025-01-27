@@ -8,27 +8,33 @@
         /* Alap stílusok */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Színes háttér */
             margin: 0;
             padding: 0;
             text-align: center;
-            color: #333;
+            color: #fff;
         }
-        
+
         h1 {
-            color: #4CAF50;
+            color: #fff;
             font-size: 3em;
             margin-top: 50px;
             text-transform: uppercase;
             animation: fadeIn 2s ease-out;
+            cursor: pointer; /* Kattintható */
+            transition: transform 0.3s ease;
         }
-        
+
+        h1:hover {
+            transform: scale(1.1); /* Kicsit megnöveli a címet */
+        }
+
         p {
             font-size: 1.2em;
-            color: #555;
+            color: #fff;
             padding: 20px;
             margin: 0;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             max-width: 80%;
@@ -37,8 +43,26 @@
         }
 
         p:hover {
-            background-color: #e8f5e9;
+            background-color: #fff8e1;
             transform: translateY(-5px);
+        }
+
+        /* Button stílus */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
         }
 
         /* Animációk */
@@ -52,27 +76,10 @@
                 transform: translateY(0);
             }
         }
-
-        /* Button stílus */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 1em;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .button:hover {
-            background-color: #45a049;
-        }
     </style>
 </head>
 <body>
-    <h1>12b valahanyadik oldala</h1>
+    <h1 onclick="alert('Köszönjük, hogy rákattintottál!')">12b valahanyadik oldala</h1>
     <p>Első a gluglu genyó volt.</p>
     
     <!-- Interaktív gomb -->
